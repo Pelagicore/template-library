@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-# Project name amd version
+# Project name and version
 project(template-library VERSION 0.1.0)
 
 # Use a pkg-config module for CMake
