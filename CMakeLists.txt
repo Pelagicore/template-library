@@ -29,5 +29,5 @@ configure_file(template-library.pc.in template-library.pc @ONLY)
 # Install directives
 install(FILES ${PUBLIC_HEADERS} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${TARGET})
 install(TARGETS ${TARGET} DESTINATION ${CMAKE_INSTALL_LIBDIR})
-install(FILES ${CMAKE_CURRENT_BINARY_DIR}/template-library.pc DESTINATION ${CMAKE_INSTALL_FULL_LIBDIR}/pkgconfig)
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/template-library.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 
