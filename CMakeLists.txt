@@ -1,7 +1,7 @@
-cmake_minimum_required(VERSION 3.2)
+cmake_minimum_required(VERSION 3.4)
 
 # Project name and version
-project(template-library VERSION 0.1.0)
+project(template-library VERSION 0.1.0 LANGUAGES CXX)
 
 # Use a pkg-config module for CMake
 find_package(PkgConfig)
@@ -10,7 +10,8 @@ find_package(PkgConfig)
 include(GNUInstallDirs)
 
 # C++ compiler flags
-add_compile_options(-std=c++14)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Project targets
 set(TARGET ${PROJECT_NAME})
