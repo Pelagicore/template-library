@@ -1,6 +1,7 @@
 TEMPLATE-LIBRARY
 ================
-A template C/C++ library.
+A template C/C++ library. Uses CMake as build system and
+[googletest](https://github.com/google/googletest) as testing framework.
 
 Maintained at https://github.com/Pelagicore/template-library
 

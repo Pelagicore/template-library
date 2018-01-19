@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.4)
 
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR}/cmake_modules)
+
 # Project name and version
 project(template-library VERSION 0.1.0 LANGUAGES CXX)
 
@@ -32,3 +34,5 @@ install(FILES ${PUBLIC_HEADERS} DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/${TARGET
 install(TARGETS ${TARGET} DESTINATION ${CMAKE_INSTALL_LIBDIR})
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/template-library.pc DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconfig)
 
+enable_testing()
+add_subdirectory(tests)
